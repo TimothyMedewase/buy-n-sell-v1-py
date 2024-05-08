@@ -1,0 +1,18 @@
+{% extends 'index.html' %} <br />
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card mt-5">
+        <div class="card-body">
+          <h3 class="card-title">Order Placed</h3>
+          <p class="card-text">Thank you for your order!</p>
+          <a href="{{url_for(product)}}" class="btn btn-primary"
+            >Continue Shopping!</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

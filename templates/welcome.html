@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} 
+{% block content %}
+<br/>
+
+<div class="container" align= "center">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Welcome to Buy-n-Sell!</h1>
+      <p>Please login or register to continue</p>
+      <a href= "{{url_for("login")}}" class="btn btn-primary">Login</a>
+      <a href= "{{url_for("register")}}" class="btn btn-secondary">Register</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
