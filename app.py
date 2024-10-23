@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template,request, flash, redirect, url_for, session
 from flask_login import login_user, login_required, logout_user, current_user
 from flask_sqlalchemy import SQLAlchemy
@@ -9,7 +10,7 @@ import hashlib
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "uygwyifyehcvbuibyibcvylisbvuibswvbyiswbgi;"
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 def db_conn():
     conn = psycopg2.connect(
