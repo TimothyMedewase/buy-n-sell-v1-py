@@ -17,7 +17,7 @@ def db_conn():
         host="localhost",
         database="postgres",
         user="postgres",
-        password="Timothy123#",
+        password=os.getenv('PGpassword'),
         port = "5432")
     return conn
 
